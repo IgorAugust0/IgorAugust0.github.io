@@ -4,17 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Trabalhos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body{
-            background-image: url("images/wallpaper.jpg");
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
         .primary-header {
             position: fixed;
             top: 0;
             left: 0;
             z-index: 999;
             width: 100%;
-            transition: background-color 0.5s;
+            transition: background-color 0.5s, opacity 0.5s;
+            opacity: 1;
+        }
+
+        .primary-header.fade-out {
+            opacity: 0;
         }
 
         .container {
@@ -24,17 +33,20 @@
         }
 
         .navbar {
+            color: transparent;
             height: 7.5rem;
             display: flex;
             align-items: end;
             justify-content: space-between;
             border-bottom: 2px solid rgba(255, 255, 255, 0.05);
             transition: height 0.25s;
+            position: relative;
         }
 
         .logo {
             font-size: 2.4rem;
             font-weight: 900;
+            color: #fff;
         }
 
         .nav-list {
@@ -43,6 +55,13 @@
             gap: 2.5rem;
             margin-left: 5rem;
             margin-right: auto;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+            transition: color 0.5s;
         }
 
         .nav-link:hover {
@@ -56,6 +75,7 @@
             padding: 0.8rem 2rem;
             border-radius: 2rem;
             transition: background-color 0.5s;
+            box-shadow: #151515 0 0 0 0.1rem;
         }
 
         .button:hover {
@@ -88,15 +108,45 @@
         header.active .button:hover {
             background-color: #151515;
         }
+
+        /* Add the parallax effect styles */
+        .parallax {
+            height: 100vh;
+            background-image: url("images/800.jpg");
+            /*background-image: url("https://picsum.photos/1200/800");*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .parallax h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            color: #fff;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .content {
+            height: 1200px;
+            background-color: black;
+            padding: 1.1rem;
+            text-align: center;
+            font-size: 2rem;
+
+        }
     </style>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
     <header class="primary-header">
         <nav class="navbar container">
-            <a href="index.html" class="logo">Trabalhos PPI</a>
+            <a href="index.html" class="logo">PPI</a>
             <ul class="nav-list">
                 <li><a href="./trabalho1/" class="nav-link">Trabalho 1</a></li>
                 <li><a href="./trabalho2/" class="nav-link">Trabalho 2</a></li>
@@ -108,12 +158,37 @@
             <a href="#" class="button">Botão</a>
         </nav>
     </header>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="content">
+        <section class="section">
+            <h1></h1>
+            <p>.</p>
+        </section>
+
+        <section class="section parallax">
+            <h1></h1>
+            <p>.</p>
+        </section>
+
+        <section class="section">
+            <h1></h1>
+            <p></p>
+        </section>
+    </div>
+
+
+
     <script>
         const isScrolling = () => {
             // function to check if the user is scrolling
             const headerEl = document.querySelector(".primary-header"); // select the header element
             let windowPosition = window.scrollY > 250; // check if the window position is greater than 250px
             headerEl.classList.toggle("scrolling-active", windowPosition); // toggle the class 'scrolling-active' to the header element
+            headerEl.classList.toggle("fade-out", windowPosition);
         };
         window.addEventListener("scroll", isScrolling); // add the event listener to the window object
     </script>
