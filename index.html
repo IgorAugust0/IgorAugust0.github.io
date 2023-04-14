@@ -1,197 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Trabalhos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .primary-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999;
-            width: 100%;
-            transition: background-color 0.5s, opacity 0.5s;
-            opacity: 1;
-        }
-
-        .primary-header.fade-out {
-            opacity: 0;
-        }
-
-        .container {
-            max-width: 120rem;
-            margin-inline: auto;
-            padding-inline: 1.5rem;
-        }
-
-        .navbar {
-            color: transparent;
-            height: 7.5rem;
-            display: flex;
-            align-items: end;
-            justify-content: space-between;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
-            transition: height 0.25s;
-            position: relative;
-        }
-
-        .logo {
-            font-size: 2.4rem;
-            font-weight: 900;
-            color: #fff;
-        }
-
-        .nav-list {
-            list-style: none;
-            display: flex;
-            gap: 2.5rem;
-            margin-left: 5rem;
-            margin-right: auto;
-        }
-
-        .nav-link {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #fff;
-            transition: color 0.5s;
-        }
-
-        .nav-link:hover {
-            color: #d3d2d3;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #fff;
-            color: #313131;
-            padding: 0.8rem 2rem;
-            border-radius: 2rem;
-            transition: background-color 0.5s;
-            box-shadow: #151515 0 0 0 0.1rem;
-        }
-
-        .button:hover {
-            background-color: #d3d3d3;
-        }
-
-        header.active {
-            background-color: #fff;
-            box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
-        }
-
-        header.active .navbar {
-            height: 6rem;
-        }
-
-        header.active .logo,
-        header.active .nav-link {
-            color: #313131;
-        }
-
-        header.active .nav-link:hover {
-            color: #808080;
-        }
-
-        header.active .button {
-            background-color: #313131;
-            color: #fff;
-        }
-
-        header.active .button:hover {
-            background-color: #151515;
-        }
-
-        /* Add the parallax effect styles */
-        .parallax {
-            height: 100vh;
-            background-image: url("images/800.jpg");
-            /*background-image: url("https://picsum.photos/1200/800");*/
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-        }
-
-        .parallax h1 {
-            font-size: 6rem;
-            font-weight: bold;
-            color: #fff;
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .content {
-            height: 1200px;
-            background-color: black;
-            padding: 1.1rem;
-            text-align: center;
-            font-size: 2rem;
-
-        }
-    </style>
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Teste 8</title>
+    <meta name="description" content="teste8">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    <header class="primary-header">
-        <nav class="navbar container">
-            <a href="index.html" class="logo">PPI</a>
-            <ul class="nav-list">
-                <li><a href="./trabalho1/" class="nav-link">Trabalho 1</a></li>
-                <li><a href="./trabalho2/" class="nav-link">Trabalho 2</a></li>
-                <li><a href="./trabalho3/" class="nav-link">Trabalho 3</a></li>
-                <li><a href="./trabalho4/" class="nav-link">Trabalho 4</a></li>
-                <li><a href="./trabalho5/" class="nav-link">Trabalho 5</a></li>
-                <li><a href="./trabalho6/" class="nav-link">Trabalho 6</a></li>
-            </ul>
-            <a href="#" class="button">Botão</a>
-        </nav>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#">PPI</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#download">download</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image: url('assets/img/intro-bg.jpg');">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">trabalhos</h1>
+                        <p class="intro-text">Site simples para redirecionar aos trabalhos.<br>Criado com amor.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <div class="progress-bar-container">
-        <div class="progress-bar"></div>
-    </div>
-
-    <div class="content">
-        <section class="section">
-            <h1></h1>
-            <p>.</p>
-        </section>
-
-        <section class="section parallax">
-            <h1></h1>
-            <p>.</p>
-        </section>
-
-        <section class="section">
-            <h1></h1>
-            <p></p>
-        </section>
-    </div>
-
-
-
-    <script>
-        const isScrolling = () => {
-            // function to check if the user is scrolling
-            const headerEl = document.querySelector(".primary-header"); // select the header element
-            let windowPosition = window.scrollY > 250; // check if the window position is greater than 250px
-            headerEl.classList.toggle("scrolling-active", windowPosition); // toggle the class 'scrolling-active' to the header element
-            headerEl.classList.toggle("fade-out", windowPosition);
-        };
-        window.addEventListener("scroll", isScrolling); // add the event listener to the window object
-    </script>
+    <section class="text-center content-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About grayscale</h2>
+                    <p>Grayscale is a free Bootstrap theme. It can be yours right now, simply download the template on&nbsp;<a href="#">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                    <p>This theme features stock photos by&nbsp;<a href="#">Gratisography</a>&nbsp;along with a custom Google Maps skin courtesy of&nbsp;<a href="#">Snazzy Maps</a>.</p>
+                    <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center download-section content-section" id="download" style="background-image: url('assets/img/downloads-bg.jpg');">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1>Download Grayscale</h1>
+                <p>You can download Grayscale for free on the preview page.</p><button class="btn btn-primary btn-lg btn-default" type="button">visit download page</button>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p>Feel free to leave us a comment on the<a href="#">&nbsp;Grayscale template overview page</a>&nbsp;to give some feedback about this theme!</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"><iframe allowfullscreen="" frameborder="0" src="https://cdn.bootstrapstudio.io/placeholders/map.html" width="100%" height="450"></iframe></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright ©&nbsp;Teste 8 2023</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
 </body>
 
 </html>
