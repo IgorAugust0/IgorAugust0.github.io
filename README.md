@@ -1,5 +1,3 @@
-# Igor Augusto
-
 ## Links
 
  - [Currículo](https://igoraugust0.github.io/personal-portfolio/)
